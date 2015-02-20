@@ -1,11 +1,26 @@
-<table>
-<caption>Weekly Schedule (M-F)</caption>
+<html>
+  <head>
+    <title>schedule</title>
+  </head>
+  <body>
+  <table>
+    <caption>Weekly Schedule (M-F)</caption>
   <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
   </tr>
-</table>
+  <tr>
+    <td>9:15</td>
+    <td rowspan=5>PSYC350</td>
+    <td rowspan=17>no class</td>
+    <td rowspan=5>PSYC350</td>
+    <td rowspan=17>no class</td>
+    <td rowspan=5>PSYC350</td>
+  </tr>
+    </table>
+  </body>
+</html>
