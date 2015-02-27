@@ -3,10 +3,12 @@ body {background-color: #F0F8FF;
 ul {list-style-type: none;}
 h1 {text-align: center;}
 section, aside {border: 1px solid black;
-      background-color: white;}
+      background-color: white;
+      height: 95%;}
 section {width: 80%;
       overflow: auto;
       padding: 25px;}
 aside {float: left;
       width: 20%;
       padding: 25px;}
+      
