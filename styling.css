@@ -7,7 +7,7 @@ section, aside {border: 1px solid black;
 section {width: 80%;
       overflow: auto;
       padding: 25px;
-      float: left;}
+      float: right;}
 aside {float: left;
       width: 20%;
       padding: 25px;}
