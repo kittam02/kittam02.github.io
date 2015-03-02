@@ -11,5 +11,6 @@ section {width: 60%;
 nav {float: left;
       width: 12%;
       padding: 25px;
-      position: fixed;}
+      position: fixed;
+      margin: auto;}
       
