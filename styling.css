@@ -7,8 +7,9 @@ section, nav {border: 1px solid black;
 section {width: 60%;
       overflow: auto;
       padding: 25px;
-      float: right;}
+      float: center;}
 nav {float: left;
       width: 20%;
-      padding: 25px;}
+      padding: 25px;
+      position: fixed;}
       
