@@ -1,8 +1,9 @@
 body {background-color: #F0F8FF;
       font-family: "lucida grande";}
 ul {list-style-type: none;}
-header {text-align: center;
-      position: fixed;
+header {position: fixed;
+      text-size: 32pt;
+      text-align: center;
       background-color: #9999FF;}
 section, nav {border: 1px solid black;
       background-color: white;}
