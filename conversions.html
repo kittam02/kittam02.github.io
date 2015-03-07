@@ -2,12 +2,12 @@
   <head>
     <title>conversions</title>
     <style>
-      #header {width: 100%;
+      .header {width: 100%;
         text-align: center;}
     </style>
   </head>
   <body>
-    <h1 id="header">Converting: °C → °F</h1>
+    <h1 class="header">Converting: °C → °F</h1>
       <label for="tempbox">celcius</label>
       <input type="text" id="tempbox">
       <button onclick="display();">convert</button>
@@ -20,7 +20,7 @@
         conversion.innerHTML = converted * 1.8 + 32 + "°F";}
     </script>
     
-    <h1 id="header2">BMI Calculator</h1>
+    <h1 class="header">BMI Calculator</h1>
       <label for="heightbox">Height (in)</label>
       <input type="text" id="heightbox">
       <br>
