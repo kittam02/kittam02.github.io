@@ -3,18 +3,16 @@
     <title>conversions<title>
   </head>
   <body>
-    <section>
       <label for="tempbox>°C</label>
       <input type="text" id="tempbox">
       <button onclick="display();">convert</button>
       <h1 id="conversion"></h1>
-    </section>
     <script>
       display = function();
       {tempbox = document.querySelector("#tempbox");
         converted = tempbox.value;
         conversion = document.querySelector("#conversion");
-        conversion.innerHTML = (converted * 1.8) + 32
+        conversion.innerHTML = (converted * 1.8) + 32;
         }
     </script>
   </body>
