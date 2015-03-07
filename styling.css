@@ -15,7 +15,7 @@ section {width: 60%;
       overflow: auto;
       padding: 25px;
       margin-top: 50px;}
-nav {float: left;
+nav {float: right;
       width: 12%;
       padding: 25px;
       position: fixed;
