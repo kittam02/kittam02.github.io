@@ -2,13 +2,14 @@ body {background-color: #F0F8FF;
       font-family: "lucida grande";}
 ul {list-style-type: none;}
 header {position: fixed;
-      text-size: 30px;
+      text-size: 40px;
       text-align: center;
       background-color: #9999FF;
       top: 0px;
       left: 0px;
       width: 100%;
-      height: 40px;}
+      height: 40px;
+}
 section, nav {border: 1px solid black;
       background-color: white;}
 section {width: 50%;
