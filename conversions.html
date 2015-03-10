@@ -8,7 +8,7 @@
       <label for="tempbox">celcius</label>
       <input type="text" id="tempbox" size="5">
       <button onclick="display();">convert</button>
-      <h1 id="conversion"></h1>
+      <h4 id="conversion"></h4>
     <script>
       display = function()
       {tempbox = document.querySelector("#tempbox");
@@ -20,13 +20,13 @@
     <h1 class="header">BMI Calculator</h1>
       <label for="heightbar">Height (in)</label>
       <input type="range" id="heightbar" min="12" max="96" value="12" onmousemove="figurebmi()">
-      <h1 id="height">12 ins</h1>
+      <h4 id="height">12 ins</h4>
       <br>
       <label for="weightbar">Weight (lbs)</label>
       <input type="range" id="weightbar" min="50" max="450" value="50" onmousemove="figurebmi()">
-      <h1 id="weight">50 lbs</h1>
+      <h4 id="weight">50 lbs</h4>
       <br>
-      <h1 id="bmi">-</h1>
+      <h4 id="bmi">-</h4>
     <script>
       figurebmi = function()
       {height = document.querySelector("#heightbar");
