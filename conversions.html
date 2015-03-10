@@ -21,20 +21,26 @@
     </script>
     
     <h1 class="header">BMI Calculator</h1>
-      <label for="heightbox">Height (in)</label>
-      <input type="text" id="heightbox" size="4">
+      <label for="heightbar">Height (in)</label>
+      <input type="range" id="heightbar" min="12" max="96" value="12" onmousemove="figurebmi()">
+      <h1 id="height">12 ins</h1>
       <br>
-      <label for="weightbox">Weight (lbs)</label>
-      <input type="text" id="weightbox" size="4">
-      <button onclick="display2();">go!</button>
-      <h1 id="bmi"></h1>
+      <label for="weightbar">Weight (lbs)</label>
+      <input type="range" id="weightbar" min="50" max="450" value="50" onmousemove="figurebmi()">
+      <h1 id="weight">50 lbs</h1>
+      <br>
+      <h1 id="bmi">-</h1>
     <script>
-      display2 = function()
-      {heightbox = document.querySelector("#heightbox");
-        height = heightbox.value;
-        weightbox = document.querySelector("#weightbox");
-        weight = weightbox.value;
+      figurebmi = function()
+      {height = document.querySelector("#heightbar");
+        height = heightbar.value;
+        weight = document.querySelector("#weightbar");
+        weight = weightbar.value;
         
+        ht = document.querySelector("#height");
+        ht.innerHTML = height + " ins";
+        wt = document.querySelector("#weight");
+        wt.innerHTML = weight + " lbs";
         bmi = document.querySelector("#bmi");
         bmi.innerHTML = (weight * 703) / (height * height) +" kg/m²";}
     </script>
