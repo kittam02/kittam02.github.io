@@ -19,7 +19,7 @@
     
     <h1 class="header">BMI Calculator</h1>
       <label for="weightbar">Weight (lbs)</label>
-      <input type="range" id="weightbar" min="50" max="450" value="50" onmousemove="figurebmi()">
+      <input type="range" id="weightbar" min="50" max="200" value="50" onmousemove="figurebmi()">
       <h4 id="weight">50 lbs</h4>
       <label for="heightbar">Height (in)</label>
       <input type="range" id="heightbar" min="12" max="96" value="12" onmousemove="figurebmi()">
@@ -33,23 +33,30 @@
         height = heightbar.value;
         weight = document.querySelector("#weightbar");
         weight = weightbar.value;
+        
         bmivalue = (weight * 703) / (height * height)
+        
         ht = document.querySelector("#height");
         ht.innerHTML = height + " ins";
+        
         wt = document.querySelector("#weight");
         wt.innerHTML = weight + " lbs";
+        
         bmi = document.querySelector("#bmi");
         bmi.innerHTML = bmivalue +" kg/m²";
+        
         if (bmivalue<19) {
           status = document.querySelector("#status");
           status.innerHTML = "too low";
           status.style.textColor = "red";
         }
         if (bmivalue>24) {
+          status = document.querySelector("#status");
           status.innerHTML = "too high";
           status.style.textColor = "red";
         }
         if (bmivalue>=19 && bmivalue<=24) {
+          status = document.querySelector("#status");
           status.innerHTML = "ok";
         }
       }
