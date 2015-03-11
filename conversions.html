@@ -26,19 +26,33 @@
       <h4 id="height">12 ins</h4>
       <br>
       <h4 id="bmi">-</h4>
+      <h4 id="status"></h4>
     <script>
       figurebmi = function()
       {height = document.querySelector("#heightbar");
         height = heightbar.value;
         weight = document.querySelector("#weightbar");
         weight = weightbar.value;
-        
+        bmivalue = (weight * 703) / (height * height)
         ht = document.querySelector("#height");
         ht.innerHTML = height + " ins";
         wt = document.querySelector("#weight");
         wt.innerHTML = weight + " lbs";
         bmi = document.querySelector("#bmi");
-        bmi.innerHTML = (weight * 703) / (height * height) +" kg/m²";}
+        bmi.innerHTML = bmivalue +" kg/m²";
+        if (bmivalue<19) {
+          status = document.querySelector("#status");
+          status.innerHTML = "too low";
+          status.style.textColor = "red";
+        }
+        if (bmivalue>24) {
+          status.innerHTML = "too high";
+          status.style.textColor = "red";
+        }
+        if (bmivalue>=19 && bmivalue<=24) {
+          status.innerHTML = "ok";
+        }
+      }
     </script>
     <a href="index.html">back to home</a>
   </body>
