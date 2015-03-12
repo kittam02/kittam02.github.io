@@ -26,7 +26,7 @@
       <h4 id="height">12 ins</h4>
       <br>
       <h4 id="bmi">-</h4>
-      <h4 id="status"></h4>
+      <h4 id="message"></h4>
     <script>
       figurebmi = function()
       {height = document.querySelector("#heightbar");
@@ -46,20 +46,21 @@
         bmi.innerHTML = bmivalue +" kg/m²";
         
         if (bmivalue<19) {
-          status = document.querySelector("#status");
-          status.innerHTML = "too low";
-          status.style.textColor = "red";
+          message = document.querySelector("#message");
+          message.innerHTML = "too low";
+          message.style.textColor = "red";
         }
         if (bmivalue>24) {
-          status = document.querySelector("#status");
-          status.innerHTML = "too high";
-          status.style.textColor = "red";
+          message = document.querySelector("#message");
+          message.innerHTML = "too high";
+          message.style.textColor = "red";
         }
         if (bmivalue>=19 && bmivalue<=24) {
-          status = document.querySelector("#status");
-          status.innerHTML = "ok";
+          message = document.querySelector("#message");
+          message.innerHTML = "ok";
         }
       }
+      window.onload = figurebmi;
     </script>
     <a href="index.html">back to home</a>
   </body>
