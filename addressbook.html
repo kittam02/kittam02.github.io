@@ -31,26 +31,26 @@
       ln = document.querySelector("#ln").value;
       phn = document.querySelector("#phn").value;
       em = document.querySelector("#em").value;
+      
       new_row = document.createElement("tr");
-      new_td = document.createElement("td");
-      new_td.textContent = fn;
-      new_row.appendChild(new_td);
-      new_td.textContent = ln;
-      new_row.appendChild(new_td);
-      new_td.textContent = phn;
-      new_row.appendChild(new_td);
-      new_td.textContent = em;
-      new_row.appendChild(new_td);
-      //newfn = document.createTextNode(fn);
-      //newln = document.createTextNode(ln);
-      //newphn = document.createTextNode(phn);
-      //newem = document.createTextNode(em);
+      
+      td_fn = document.createElement("td");
+      td_fn.textContent = fn;
+      new_row.appendChild(td_fn);
+      
+      td_ln = document.createElement("td");
+      td_ln.textContent = ln;
+      new_row.appendChild(td_ln);
+      
+      td_phn = document.createElement("td");
+      td_phn.textContent = phn;
+      new_row.appendChild(td_phn);
+      
+      td_em = document.createElement("td");
+      td_em.textContent = em;
+      new_row.appendChild(td_em);
       
       book.appendChild(new_row);
-      //newrow.appendChild(newfn);
-      //newrow.appendChild(newln);
-      //newrow.appendChild(newphn);
-      //newrow.appendChild(newem);
     }
   </script>
   </body>
