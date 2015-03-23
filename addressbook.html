@@ -1,20 +1,22 @@
 <html>
   <head>
     <title>address book</title>
+    
   </head>
+  
   <body>
   <h1>my address book</h1>
-  <p>First name</p>
-  <input type="text" id="fn">
-  <p>Last name</p>
-  <input type="text" id="ln">
-  <p>Phone number</p>
-  <input type="text" id="phn">
-  <p>e-mail</p>
-  <input type="text" id="em">
-  <button>Add</button>
+    <p>First name</p>
+      <input type="text" id="fn">
+    <p>Last name</p>
+      <input type="text" id="ln">
+    <p>Phone number</p>
+      <input type="text" id="phn">
+    <p>e-mail</p>
+      <input type="text" id="em">
+    <button onclick="add()">Add</button>
   
-  <table>
+  <table  id="book">
     <tr>
       <th>First name</th>
       <th>Last name</th>
@@ -22,5 +24,18 @@
       <th>e-mail</th>
     </tr>
   </table>
+  
+  <script>
+    add = function() {
+      fn = document.querySelector("#fn").value;
+      ln = document.querySelector("#ln").value;
+      phn = document.querySelector("#phn").value;
+      em = document.querySelector("#em").value;
+      newtr = document.createElement("tr");
+      book.appendChild(newtr);
+      newfn = document.createElement("th");
+      newtr.appendChild(newfn);
+    }
+  </script>
   </body>
 </html>
