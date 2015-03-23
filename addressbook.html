@@ -31,10 +31,17 @@
       ln = document.querySelector("#ln").value;
       phn = document.querySelector("#phn").value;
       em = document.querySelector("#em").value;
-      newtr = document.createElement("tr");
-      book.appendChild(newtr);
-      newfn = document.createElement("th");
-      newtr.appendChild(newfn);
+      newrow = document.createElement("tr");
+      newfn = document.createTextNode(fn);
+      newln = document.createTextNode(ln);
+      newphn = document.createTextNode(phn);
+      newem = document.createTextNode(em);
+      
+      book.appendChild(newrow);
+      newrow.appendChild(newfn);
+      newrow.appendChild(newln);
+      newrow.appendChild(newphn);
+      newrow.appendChild(newem);
     }
   </script>
   </body>
