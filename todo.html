@@ -2,6 +2,13 @@
   <head>
     <title>to do list</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      ul {list-style: none;}
+      .Low {color: black;}
+      .Medium {color: blue;}
+      .High {color: red;}
+      .done {text-decoration: line-through;}
+    </style>
   </head>
   <body>
     <section>
@@ -12,9 +19,36 @@
       <option>Medium</option>
       <option>High</option>
     </select>
-    <button onclick="add()">add to list</button>
+    <button onclick="addition()">add to list</button>
     <ul id="list"></ul>
+    </section>
     <script>
+    addition = function() {
+      itemval = document.querySelector("#item").value;
+
+      new_item = document.createElement("li");
+      list.appendChild(new_item);
+      
+      cb = document.createElement("input");
+      cb.type = "checkbox";
+      new_item.appendChild(cb);
+      cb.onclick = off;
+      
+      item = document.createTextNode(itemval);
+      new_item.appendChild(item);
+      
+      priority = document.querySelector("#priority");
+      theindex = priority.selectedIndex;
+      option = priority.options[theindex];
+      color = option.value;
+      new_item.classList.add(color);
+        }
+        off = function() {
+          if (this.checked)
+            this.parentNode.classList.add("done");
+          else
+            this.parentNode.classList.remove("done");
+        }
     </script>
   </body>
 </html>
