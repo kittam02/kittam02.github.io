@@ -21,7 +21,7 @@
     </select>
     <button onclick="addition()">add to list</button>
     <ul id="list"></ul>
-    <button onclick="clear()">clear list</button>
+    <button onclick="clearlist()">clear list</button>
     </section>
     <script>
     addition = function() {
@@ -50,9 +50,9 @@
           else
             this.parentNode.classList.remove("done");
         }
-      clear = function() {
-        list = document.querySelector("#list");
-        list.innerHTML = "";
+      clearlist = function() {
+        clearlist = document.querySelector("#list");
+        clearlist.innerHTML = "";
       }
     </script>
   </body>
